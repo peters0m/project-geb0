@@ -1,0 +1,54 @@
+// C++ code
+//
+  int ENA1=13;
+  int ENA3=12;
+  int ENB1=11;
+  int ENB3=10;
+  int M1P=9;
+  int M1N=8;
+  int M2P=7;
+  int M2N=6;
+  int M3P=5;
+  int M3N=4;
+  int M4P=3;
+  int M4N=2;
+  
+  
+void setup()
+{
+  analogWrite(ENA1, 255);
+ analogWrite(ENA3, 255);
+  analogWrite(ENB1, 255);
+  analogWrite(ENB3, 255);
+  
+ 
+  pinMode(M1P, OUTPUT);
+  pinMode(M1N, OUTPUT);
+  pinMode(M2P, OUTPUT);
+  pinMode(M2N, OUTPUT);
+  pinMode(M3P, OUTPUT);
+  pinMode(M3N, OUTPUT);
+  pinMode(M4P, OUTPUT);
+  pinMode(M4N, OUTPUT);
+  
+
+  }
+
+void loop()
+{
+    digitalWrite(M1P, HIGH);
+    digitalWrite(M1N, LOW);
+  
+  digitalWrite(M2P, HIGH);
+    digitalWrite(M2N, LOW);
+  
+  
+  digitalWrite(M3P, HIGH);
+    digitalWrite(M3N, LOW);
+  
+  digitalWrite(M4P, HIGH);
+    digitalWrite(M4N, LOW);
+  delay(1000);
+  
+  
+}
